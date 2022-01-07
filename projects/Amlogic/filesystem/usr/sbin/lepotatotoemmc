@@ -17,7 +17,8 @@ BOOT_PART="${BLKDEV}p1"
 STORAGE_PART="${BLKDEV}p2"
 NEWBOOT=/var/media/NEWBOOT
 NEWSTORAGE=/var/media/NEWSTORAGE
-LE_DT_ID=$(cat /proc/device-tree/le-dt-id)
+#LE_DT_ID=$(cat /proc/device-tree/le-dt-id)
+LE_DT_ID=$(cat /proc/device-tree/coreelec-dt-id)
 
 toggle_emmc_timeout(){
   mount -o remount,rw /flash
